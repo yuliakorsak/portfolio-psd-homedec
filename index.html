@@ -26,7 +26,7 @@
     <article class="main__block" id="intro">
       <figure>
         <figcaption>Discover the new autumn / winter collection with natural and recycled materials</figcaption>
-        <img  class="arched" src="img/intro1.jpg" alt="room interiors">
+        <img class="arched" src="img/intro1.jpg" alt="room interiors">
       </figure>
       <h4>New catalog</h4>
       <h1>Natural Home Decor</h1>
@@ -119,21 +119,23 @@
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
     <button class="subscribe__submit button" form="subscribe-form" type="submit">Subscribe</button>
     <form class="subscribe__form" id="subscribe-form" action="#">
-      <div class="subscribe__form-inputs">
-        <label class="subscribe__form-label" for="subscribe_name">Name</label>
-        <input class="subscribe__form-input" id="subscribe_name" name="subscribe_name" required>
-        <label class="subscribe__form-label" for="subscribe_surname">Surame</label>
-        <input class="subscribe__form-input" id="subscribe_surname" name="subscribe_surname">
+        <div class="form-column">
+          <label class="subscribe__form-label" for="subscribe_name">Name</label>
+          <input class="subscribe__form-input" id="subscribe_name" name="subscribe_name" required>
+        </div>
+        <div class="form-column">
+          <label class="subscribe__form-label" for="subscribe_surname">Surname</label>
+          <input class="subscribe__form-input" id="subscribe_surname" name="subscribe_surname">
+        </div>
         <label class="subscribe__form-label" for="subscribe_email">Email</label>
         <input class="subscribe__form-input" type="email" id="subscribe_email" name="subscribe_email" required>
-        <label class="subscribe__form-input" for="subscribe_password">Password</label>
+        <label class="subscribe__form-label" for="subscribe_password">Password</label>
         <input class="subscribe__form-input" type="password" id="subscribe_password" name="subscribe_password" required>
         <label class="subscribe__form-label" for="subscribe_message">Message</label>
-        <textarea class="subscribe__form-textarea" name="subscribe_message" id="subscribe_message" required></textarea>
-        <p class="subscribe__form-disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <textarea class="subscribe__form-input" name="subscribe_message" id="subscribe_message" required></textarea>
+        <p class="subscribe__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-      </div>
     </form>
   </section>
 
