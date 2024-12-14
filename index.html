@@ -11,157 +11,190 @@
 
 <body>
   <header class="header">
-    <img class="header__logo" src="img/logo_horizontal.svg" alt="NatureHomeDec logo">
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-list-item"><a href="#">Store</a></li>
-        <li class="header__menu-list-item"><a href="#">Materials</a></li>
-        <li class="header__menu-list-item"><a href="#">About Us</a></li>
-        <li class="header__menu-list-item"><a href="#">Contact</a></li>
+    <img class="logo" src="img/logo_horizontal.svg" alt="NatureHomeDec logo">
+    <nav class="header-menu">
+      <ul class="header-menu-list">
+        <li class="header-menu-item"><a href="#">Store</a></li>
+        <li class="header-menu-item"><a href="#">Materials</a></li>
+        <li class="header-menu-item"><a href="#">About Us</a></li>
+        <li class="header-menu-item"><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <article class="main__block" id="intro">
-      <figure>
-        <figcaption>Discover the new autumn / winter collection with natural and recycled materials</figcaption>
-        <img class="arched" src="img/intro1.jpg" alt="room interiors">
-      </figure>
-      <h4>New catalog</h4>
-      <h1>Natural Home Decor</h1>
-      <p class="main__description description-larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
-      <a class="main__button button" href="#">Read more</a>
-      <figure>
-        <img class="round" src="img/intro2.jpg" alt="rope plant pot">
-      </figure>
+    <article id="intro" class="article">
+      <div class="path-figure">
+        <svg class="arched-text" viewBox="0 0 720 700" xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" id="archPath" d="M20,360 A340,340,90,0,1,700,360 H0 Z" />
+          <text fill="var(--text-main)">
+            <textPath href="#archPath" textLength="1068">
+              Discover the new autumn / winter collection with natural and recycled materials
+            </textPath>
+          </text>
+        </svg>
+        <figure>
+          <img class="img-arched" src="img/intro1.jpg" alt="room interiors">
+        </figure>
+      </div>
+      <div class="wrap">
+        <h4>New catalog</h4>
+        <h1>Natural Home Decor</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+        <a class="button" href="#">Read more</a>
+        <figure>
+          <img class="img-round" src="img/intro2.jpg" alt="rope plant pot">
+        </figure>
+      </div>
     </article>
 
-    <article class="main__block" id="catalog">
-      <h2>Download our new catalog</h2>
-      <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in</p>
-      <a class="main__button button" href="#">Download Now</a>
+    <article id="catalog" class="article">
+      <div class="wrap">
+        <h2>Download our new catalog</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea
+          commodo consequat. Duis aute irure dolor in</p>
+        <a class="button" href="#">Download Now</a>
+      </div>
       <figure>
         <img src="img/catalog.jpg" alt="living room interior">
       </figure>
     </article>
 
-    <article class="main__block" id="products">
+    <article id="products" class="article">
       <h2>Our products</h2>
-      <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-      <figure>
-        <img class="round" src="img/product1.jpg" alt="blue armchair">
-        <figcaption>Blue Armchair</figcaption>
-      </figure>
-      <figure>
-        <img class="round" src="img/product2.jpg" alt="gray sofa">
-        <figcaption>Gray Sofa</figcaption>
-      </figure>
-      <figure>
-        <img class="round" src="img/product3.jpg" alt="rope pot">
-        <figcaption>Rope Pot</figcaption>
-      </figure>
-      <a class="main__button button" href="#">Shop Now</a>
+      <div class="wrap">
+        <a href="#" target="_blank">
+          <figure class="product">
+            <img class="img-round" src="img/product1.jpg" alt="blue armchair">
+            <figcaption>Blue Armchair</figcaption>
+          </figure>
+        </a>
+        <a href="#" target="_blank">
+          <figure class="product">
+            <img class="img-round" src="img/product2.jpg" alt="gray sofa">
+            <figcaption>Gray Sofa</figcaption>
+          </figure>
+        </a>
+        <a href="#" target="_blank">
+          <figure class="product">
+            <img class="img-round" src="img/product3.jpg" alt="rope pot">
+            <figcaption>Rope Pot</figcaption>
+          </figure>
+        </a>
+      </div>
+      <a class="button" href="#">Shop Now</a>
     </article>
 
-    <article class="main__block" id="about">
+    <article id="about" class="article">
       <figure>
         <img src="img/about.jpg" alt="dried feathergrass in a vase">
       </figure>
-      <a class="main__button button" href="#">Read more</a>
+      <div class="wrap">
+        <h2>About us</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+        <a class="button" href="#">Read more</a>
+      </div>
     </article>
 
-    <article class="main__block" id="work">
+    <article id="work" class="article">
+      <h2>Our work</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
       <figure>
         <img src="img/work.jpg" alt="room interior">
       </figure>
-      <h2>Our work</h2>
-      <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-      <a class="main__button button" href="#">Read more</a>
+      <a class="button" href="#">Read more</a>
     </article>
 
-    <article class="main__block" id="recycling">
-      <h2>New recyclable materials</h2>
-      <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      </p>
-      <a class="main__button button" href="#">Read more</a>
+    <article id="recycling" class="article">
+      <div class="wrap">
+        <h2>New recyclable materials</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        </p>
+        <a class="button" href="#">Read more</a>
+        <figure>
+          <img class="img-round" src="img/recycle1.jpg" alt="blue armchair">
+        </figure>
+      </div>
       <figure>
-        <img class="round" src="img/recycle1.jpg" alt="blue armchair">
-      </figure>
-      <figure>
-        <img class="wave" src="img/recycle2.jpg" alt="room interior">
+        <img class="img-wave" src="img/recycle2.jpg" alt="room interior">
       </figure>
     </article>
 
-    <article class="main__block" id="contact">
+    <article class="article" id="contact">
       <h2>Contact</h2>
-      <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
       <figure>
         <img id="map" src="img/map.jpg" alt="map">
       </figure>
-      <a class="button button_larger" href="#">Contact</a>
+      <a class="button" href="#">Contact</a>
     </article>
   </main>
 
   <section class="subscribe" id="subscribe">
-    <h2>Subscribe to our newsletter</h2>
-    <p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-    <button class="subscribe__submit button" form="subscribe-form" type="submit">Subscribe</button>
-    <form class="subscribe__form" id="subscribe-form" action="#">
+    <div class="wrap">
+      <h2>Subscribe to our newsletter</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+      <button class="button" form="subscribe-form" type="submit">Subscribe</button>
+    </div>
+    <form id="subscribe-form" action="#">
+      <div class="columns">
         <div class="form-column">
-          <label class="subscribe__form-label" for="subscribe_name">Name</label>
-          <input class="subscribe__form-input" id="subscribe_name" name="subscribe_name" required>
+          <label class="form-label" for="subscribe-name">Name</label>
+          <input class="form-input" id="subscribe-name" name="subscribe-name" required>
         </div>
         <div class="form-column">
-          <label class="subscribe__form-label" for="subscribe_surname">Surname</label>
-          <input class="subscribe__form-input" id="subscribe_surname" name="subscribe_surname">
+          <label class="form-label" for="subscribe-surname">Surname</label>
+          <input class="form-input" id="subscribe-surname" name="subscribe-surname">
         </div>
-        <label class="subscribe__form-label" for="subscribe_email">Email</label>
-        <input class="subscribe__form-input" type="email" id="subscribe_email" name="subscribe_email" required>
-        <label class="subscribe__form-label" for="subscribe_password">Password</label>
-        <input class="subscribe__form-input" type="password" id="subscribe_password" name="subscribe_password" required>
-        <label class="subscribe__form-label" for="subscribe_message">Message</label>
-        <textarea class="subscribe__form-input" name="subscribe_message" id="subscribe_message" required></textarea>
-        <p class="subscribe__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+      </div>
+      <label class="form-label" for="subscribe-email">Email</label>
+      <input class="form-input" type="email" id="subscribe-email" name="subscribe-email" required>
+      <label class="form-label" for="subscribe-password">Password</label>
+      <input class="form-input" type="password" id="subscribe-password" name="subscribe-password" required>
+      <label class="form-label" for="subscribe-message">Message</label>
+      <textarea class="form-input form-textarea" name="subscribe-message" id="subscribe-message" required></textarea>
+      <p class="form-disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
     </form>
   </section>
 
   <footer class="footer">
-    <img class="footer__logo" src="img/logo_vertical.svg" alt="NatureHomeDec logo">
-    <nav class="footer__menu">
-      <ul class="footer__menu-list">
-        <li class="footer__menu-list-item"><a href="#">Store</a></li>
-        <li class="footer__menu-list-item"><a href="#">Materials</a></li>
-        <li class="footer__menu-list-item"><a href="#"></a>About Us</li>
-        <li class="footer__menu-list-item"><a href="#"></a>Contact</li>
+    <img class="logo" src="img/logo_vertical.svg" alt="NatureHomeDec logo">
+    <nav class="footer-menu">
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item"><a href="#">Store</a></li>
+        <li class="footer-menu-item"><a href="#">Materials</a></li>
+        <li class="footer-menu-item"><a href="#"></a>About Us</li>
+        <li class="footer-menu-item"><a href="#"></a>Contact</li>
       </ul>
-      <ul class="footer__menu-list">
-        <li class="footer__menu-list-item"><a href="#">Cookies</a></li>
-        <li class="footer__menu-list-item"><a href="#">Privacy Policy</a></li>
-        <li class="footer__menu-list-item"><a href="#">FAQs</a></li>
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item"><a href="#">Cookies</a></li>
+        <li class="footer-menu-item"><a href="#">Privacy Policy</a></li>
+        <li class="footer-menu-item"><a href="#">FAQs</a></li>
       </ul>
     </nav>
-    <div class="footer__externals">
-      <div class="footer__copyright">Site Design | <a
+    <div class="externals">
+      <div class="copyright">Site Design | <a
           href="https://freepik.com/free-psd/product-catalog-web-design-template_21532435.htm"
           target="_blank">freepik</a></div>
-      <ul class="footer__socials">
-        <li class="footer__socials-item"><a class="socials socials_instagram" target="_blank"></a></li>
-        <li class="footer__socials-item"><a class="socials socials_facebook" target="_blank"></a></li>
-        <li class="footer__socials-item"><a class="socials socials_twitter" target="_blank"></a></li>
+      <ul class="socials">
+        <li class="socials-item"><a class="social instagram" target="_blank"></a></li>
+        <li class="socials-item"><a class="social facebook" target="_blank"></a></li>
+        <li class="socials-item"><a class="social twitter" target="_blank"></a></li>
       </ul>
     </div>
   </footer>
