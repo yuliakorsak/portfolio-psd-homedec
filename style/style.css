@@ -12,8 +12,7 @@
   font-family: "OpenSans";
   font-display: swap;
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-    url("fonts/OpenSans-Regular.ttf") format("ttf"),
-    url("https://fonts.googleapis.com/css2?family=Open+Sans");
+    url("fonts/OpenSans-Regular.ttf") format("ttf");
   font-weight: normal;
   font-stretch: 100%;
 }
@@ -22,8 +21,7 @@
   font-family: "OpenSans";
   font-display: swap;
   src: local("Open Sans Semibold"), local("OpenSans-SemiBold"),
-    url("fonts/OpenSans-SemiBold.ttf") format("ttf"),
-    url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600");
+    url("fonts/OpenSans-SemiBold.ttf") format("ttf");
   font-weight: 600;
   font-stretch: 100%;
 }
@@ -84,6 +82,7 @@ h4 {
 }
 
 body {
+  min-width: 1440px;
   color: var(--text-main);
   font-family: OpenSans, sans-serif;
   font-size: 16.67px;
@@ -134,8 +133,8 @@ body {
 
 .main {
   box-sizing: border-box;
+  min-width: 1440px;
   max-width: 1440px;
-  min-width: 960px;
   margin: 0 auto;
   padding: 0 88px;
 }
