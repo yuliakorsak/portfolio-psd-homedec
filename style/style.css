@@ -120,6 +120,8 @@ body {
 
 .header .logo {
   width: 209px;
+  height: 23px;
+  margin-bottom: 5px;
 }
 
 .header-menu-list {
@@ -474,7 +476,8 @@ body {
 }
 
 .footer .logo {
-  width: 150px;
+  width: 148px;
+  height: 45px
 }
 
 
@@ -519,15 +522,15 @@ body {
 
 .instagram {
   width: 18px;
-  background-image: url('../img/icon_instagram.svg');
+  background-image: url('../img/socials.svg#instagram');
 }
 
 .facebook {
   width: 9px;
-  background-image: url('../img/icon_facebook.svg');
+  background-image: url('../img/socials.svg#facebook');
 }
 
 .twitter {
   width: 23px;
-  background-image: url('../img/icon_twitter.svg');
+  background-image: url('../img/socials.svg#twitter');
 }
